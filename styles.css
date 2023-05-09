@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body {
+	max-width: 1200px;
+	margin: auto;
+	padding: 16px;
+	font-family: 'Montserrat', sans-serif;
+    background-color: #f3f3f3;
+}
+
+
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 16px;
+	padding: 8px;
+	background-color: #7451eb;
+	text-align: center;
+	color: white;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+}
+
+.sectionRecherche {
+	border-radius: 4px;
+	box-shadow: 0px 0px 4px gray;
+	margin: 8px;
+	padding: 8px;
+	min-width: 300px;
+	min-height: 400px;
+    background-color: #fff;
+}
+
+.sectionRecherche h3 {
+    text-align: center;
+}
+
+.sectionBook {
+	flex: 1;
+	margin: 8px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 15px;
+    background-color: #fff;
+}
+
+.sectionBook article {
+	border-radius: 4px;
+	box-shadow: 0px 0px 4px gray;
+	padding: 4px;
+}
+.sectionBook article img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 200px;
+}
+.sectionBook article h2 {
+	text-align: center;
+}
+
+.sectionBook article p {
+    margin-top: 4px;
+	margin-bottom: 4px;
+    text-align: center;
+}
