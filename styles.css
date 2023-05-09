@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+* {
+    margin: 0;
+}
 
 body {
 	max-width: 1200px;
@@ -10,20 +13,35 @@ body {
 }
 
 
-header {
+header nav{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	margin-bottom: 16px;
 	padding: 8px;
-	background-color: #7451eb;
+	background: linear-gradient(to right,#200122, #6f0000);
 	text-align: center;
 	color: white;
+    justify-content: space-between;
+    border-radius: 4px;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  nav a {
+    margin-left: 30px;
+  }
 
 main {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .sectionRecherche {
@@ -34,11 +52,34 @@ main {
 	min-width: 300px;
 	min-height: 400px;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(peinture.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    
 }
 
-.sectionRecherche h3 {
+.sectionRecherche h1 {
     text-align: center;
+    font-size: 2.5em;
+    
+    
 }
+
+.sectionRecherche input {
+
+    border-radius: 50px;
+    font-size: large;
+    border: white; 
+    height: 40px;
+}
+
+
+
 
 .sectionBook {
 	flex: 1;
