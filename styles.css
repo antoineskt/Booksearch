@@ -69,3 +69,34 @@ main {
 	margin-bottom: 4px;
     text-align: center;
 }
+
+@media screen and (max-width: 996px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    main {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .sectionRecherche {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .sectionBook {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
