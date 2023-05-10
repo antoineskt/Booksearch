@@ -1,0 +1,45 @@
+.header h1 {
+    margin-bottom: 20px;
+    
+}
+
+
+.header input {
+    
+    font-size: medium;
+    border-color: white;
+    
+    padding: 15px;
+    border: none;
+    width: 50%;
+}
+
+.header button {
+   
+    background-color: rgb(214, 201, 201);
+    font-size: medium;
+    padding: 15px;
+    border: none;
+    width: 15%;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: none;
+    padding: 0;
+   
+  }
+
+ul li {
+    background: #eee;
+    padding: 12px 15px 12px 15px;
+    font-size: medium; 
+    margin: 0px; 
+    
+   
+}
+
+ul li:hover {
+    background: #ddd;
+  }

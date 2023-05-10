@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
 
 
-  let income = document.querySelector("#search");
+  let input = document.querySelector("#search");
 
 
-  income.addEventListener("keydown", async function(event) {
+  input.addEventListener("keydown", async function(event) {
       if (event.key === "Enter") {
         document.querySelector(".sectionBook").innerHTML = "";
         const income = document.querySelector("input").value;
