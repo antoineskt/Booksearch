@@ -24,22 +24,43 @@
     
 }
 
-ul {
-    list-style-type: none;
-    margin: none;
-    padding: 0;
-   
-  }
-
-ul li {
-    background: #eee;
-    padding: 12px 15px 12px 15px;
-    font-size: medium; 
-    margin: 0px; 
-    
-   
+#tasks{
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
 }
 
-ul li:hover {
-    background: #ddd;
-  }
+.task{
+    background-color: #c5e1e6;
+    height: 50px;
+		margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+		border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+}
+.task span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.task button{
+    background-color: #0a2ea4;
+    color: #ffffff;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.completed{
+    text-decoration: line-through;
+}
