@@ -19,13 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
             document.querySelector("#tasks").innerHTML += 
             `
             <div class="task">
-            <span id="taskname">
-                ${income}
-            </span>
-            <button class="delete">
-                <i class="far fa-trash-alt"></i>
-            </button>
-        </div>
+                <span id="taskname">
+                    ${income}
+                </span>
+                <button class="delete">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+            </div>
             
             `;
 

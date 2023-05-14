@@ -27,12 +27,33 @@ document.addEventListener("DOMContentLoaded", async function() {
             const publishDate = document.createElement("p");
             publishDate.innerText = (`Publish date : ${book.publish_date}`);
 
+            const deleteButton = document.createElement("button")
+            deleteButton.classList.add("deleteButton");
+            deleteButton.innerHTML = `
+            
+                <i class="far fa-trash-alt"></i>
+            
+            `;
+            deleteButton.onclick = function () {
+                console.log("suppression du livre :" + book.title);
+                
+
+                fetch("http://localhost:8081/books/" + book.cover_i, {
+                method: "DELETE",
+                headers: { "Content-Type": "application/json" }
+                
+              })
+            };
+
+           
+            
 
             sectionBook.appendChild(article);
             article.appendChild(titreLivre);
             article.appendChild(imgLivre);
             article.appendChild(authorLivre);
             article.appendChild(publishDate);
+            article.appendChild(deleteButton);
             
 
         }

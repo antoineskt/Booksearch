@@ -19,15 +19,14 @@ header nav{
 	align-items: center;
 	margin-bottom: 16px;
 	padding: 8px;
-	background: linear-gradient(to right,#200122, #6f0000);
+	background-color: white;
 	text-align: center;
-	color: white;
     justify-content: space-between;
     border-radius: 4px;
 }
 
 a {
-    color: white;
+    color: black;
     text-decoration: none;
   }
 
@@ -35,9 +34,13 @@ a {
     text-decoration: underline;
   }
 
-  nav a {
+nav a {
     margin-left: 30px;
-  }
+}
+
+nav img {
+    filter: invert(1);
+}
 
 
 
@@ -134,6 +137,14 @@ a {
 	margin-right: auto;
     font-family: 'Montserrat', sans-serif;
     
+}
+
+.deleteButton {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 4em;
+    height: 3em;
 }
 
 @media screen and (max-width: 996px) {
