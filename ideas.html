@@ -1,37 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>list</title>
-    <link href="styles.css" rel="stylesheet">
-    <link href="todo.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+    <link href="todo.css" rel="stylesheet" />
     <!--Font Awesome CDN-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <script src="todo.js" ></script>
-</head>
-<body>
-  <header>
-    <nav>
-      <img src="bookLogoOk.png" alt="logo book">
-      <div>
-        <a href="index.html">HomePage</a>
-        <a href="myList.html">MyList</a>
-        <a href="ideas.html">Ideas</a>
-        <a href="about.html">About</a>
-      </div>
-    </nav>
-  </header>
-
-      <main>
-        <div class="header">
-          <h1>Write some ideas to read</h1>
-          <input type="text" name="search" id="search" placeholder="title">
-          <button>Add</button>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script src="todo.js"></script>
+    <script src="menuBurger.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./images/bookLogoOk.png" alt="logo book" />
+        <div class="menuResponsive">
+          <svg
+            class="openSvg"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            height="24"
+            width="24"
+          >
+            <path
+              d="M5 11a1 1 0 1 0 0 2zm14 2a1 1 0 1 0 0-2zM5 6a1 1 0 0 0 0 2zm14 2a1 1 0 1 0 0-2zM5 16a1 1 0 1 0 0 2zm14 2a1 1 0 1 0 0-2zM5 13h14v-2H5zm0-5h14V6H5zm0 10h14v-2H5z"
+              fill="currentColor"
+            />
+          </svg>
+          <svg
+            class="closeSvg"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="m5 5 14 14m-14 0 14-14"
+              stroke="#000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
         </div>
+        <div class="menu">
+          <a href="index.html">HomePage</a>
+          <a href="myList.html">MyList</a>
+          <a href="ideas.html">Ideas</a>
+          <a href="about.html">About</a>
+        </div>
+      </nav>
+    </header>
 
-        <div id="tasks"></div>
-      </main>
-</body>
+    <main>
+      <div class="header">
+        <h1>Write some ideas to read</h1>
+        <input type="text" name="search" id="search" placeholder="title" />
+        <button>Add</button>
+      </div>
+
+      <div id="tasks"></div>
+    </main>
+  </body>
 </html>
