@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         try {
           //lance la requete de recherche par rapport au nom entrée par l'utilisateur
           const response = await fetch(
-            "http://openlibrary.org/search.json?title=" +
+            "https://openlibrary.org/search.json?title=" +
               income +
               "&limit=10" +
               "&offset=0",
