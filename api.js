@@ -20,6 +20,13 @@ document.addEventListener("DOMContentLoaded", function () {
               income +
               "&limit=10" +
               "&offset=0",
+            {
+              method: "GET",
+              headers: {
+                Accept: "application/json",
+              },
+              cache: "default",
+            },
           );
 
           const books = await response.json();
