@@ -131,6 +131,18 @@ nav img {
   margin-left: auto;
   margin-right: auto;
   font-family: "Montserrat", sans-serif;
+  transition: all 0.3s; /* Ajoutez une transition */
+}
+
+.buttonReadList.checkmark {
+  /* Styles pour le bouton avec le texte "✔️" */
+  background-color: rgb(
+    231,
+    214,
+    214
+  ); /* Par exemple, changez la couleur de fond */
+  color: rgb(0, 0, 0); /* Par exemple, changez la couleur du texte */
+  /* Autres styles souhaités */
 }
 
 .deleteButton {
@@ -181,9 +193,6 @@ nav img {
     flex-direction: column;
     margin: 0px;
     gap: 0px;
-  }
-
-  .sectionBook article {
   }
 
   .sectionBook article h2 {

@@ -72,8 +72,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
               //ajout du livre en mémoire
               buttonReadList.addEventListener("click", function () {
-                console.log("ajout du livre numéro : " + [i]);
-
                 const books = {
                   id: parseInt(book.cover_i),
                   //title: book.title,
@@ -82,15 +80,34 @@ document.addEventListener("DOMContentLoaded", function () {
                   cover_i: parseInt(book.cover_i),
                 };
 
-                // Création de la charge utile au format JSON
-                const chargeUtile = JSON.stringify(books);
-                console.log(chargeUtile);
-                //appel de la fonction fetch
-                fetch("http://localhost:8081/books", {
-                  method: "POST",
-                  headers: { "Content-Type": "application/json" },
-                  body: chargeUtile,
-                });
+                // Changez le texte du bouton et ajoutez la classe "checkmark" au clic
+                buttonReadList.innerText = "✔️";
+                buttonReadList.classList.add("checkmark");
+                buttonReadList.disabled = true; // Désactivez le bouton après le clic
+
+                // Récupérer les données existantes du localStorage
+                const existingData = localStorage.getItem("readList");
+
+                // Si des données existent déjà, les parser depuis JSON
+                const existingBooks = existingData
+                  ? JSON.parse(existingData)
+                  : [];
+
+                // Ajouter de nouvelles données (books) aux données existantes
+                existingBooks.push(...[books]);
+
+                // Convertir le tout en JSON
+                const updatedData = JSON.stringify(existingBooks);
+
+                // Stocker les données mises à jour dans le localStorage
+                localStorage.setItem("readList", updatedData);
+
+                //appel de la fonction fetch SI UTILISATION D UN SERVEUR NODE JS
+                // fetch("http://localhost:8081/books", {
+                //   method: "POST",
+                //   headers: { "Content-Type": "application/json" },
+                //   body: chargeUtile,
+                // });
               });
 
               sectionBook.appendChild(article);
